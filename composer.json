@@ -1,0 +1,27 @@
+{
+    "name": "luckyseven/laravel-sqs-direct-queue",
+    "description": "Create job from any Amazon SQS message using Laravel queues.",
+    "type": "library",
+    "keywords": ["messaging", "queue", "laravel", "sqs"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/queue": "^v8.0",
+        "aws/aws-sdk-php": "^3.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LuckySeven\\SqsDirectQueue\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LuckySeven\\SqsDirectQueue\\Providers\\QueueServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
